@@ -1,4 +1,4 @@
-module GHDDistributedSearch
+module github.com/cem-okulmus/GHDDistributedSearch
 
 go 1.16
 

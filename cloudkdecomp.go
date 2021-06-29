@@ -15,6 +15,7 @@ import (
 
 	algo "github.com/cem-okulmus/BalancedGo/algorithms"
 	"github.com/cem-okulmus/BalancedGo/lib"
+	cloudlib "github.com/cem-okulmus/GHDDistributedSearch/lib"
 )
 
 func logActive(b bool) {
@@ -351,7 +352,7 @@ func main() {
 
 	if solver != nil {
 
-		solver.SetGenerator(DistSearchGen{})
+		solver.SetGenerator(cloudlib.DistSearchGen{})
 
 		var decomp lib.Decomp
 		start := time.Now()
